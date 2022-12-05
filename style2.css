@@ -1,0 +1,68 @@
+#main-wrapper{
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5%;
+    
+}
+.avatar{
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+}
+.carimage{
+    width: 100px;
+    height: 80px;
+    max-width: 100%;
+    text-align: center;
+}
+.myform{
+    width: 450px;
+    margin: 0 auto;
+}
+.inputvalues{
+    width: 450px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.inputid{
+    
+    font-size: large;
+    color:red;
+    border: none;
+}
+#cancel_btn{
+    width: 80px;
+    margin-top: 5px;
+    background-color: #2416a0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+}
+#submit_btn{
+    width: 80px;
+    margin-top: 5px;
+    background-color: #023320;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+}
+#cancelsubmit{
+    margin-bottom: 5px;
+    background-color: aquamarine;
+    
+}

@@ -1,0 +1,114 @@
+#firstdiv{
+    width: 17%;
+    font-size: 16px;
+    color: aquamarine;
+    float: left;
+    background-color:dimgray;
+    text-align: center;
+    
+   
+}
+#seconddiv{
+    width: 80%;
+    float:right;
+    background-color: antiquewhite;
+}
+#middiv{
+    width: 3%;
+    margin: 0 auto;
+}
+#user{
+    width: 100%;
+    margin-top: 1px;
+    background-color: #16a085;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+}
+#car{
+    width: 100%;
+    margin-top: 1px;
+    background-color: #16a085;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+}
+#booking{
+    width: 100%;
+    margin-top: 1px;
+    background-color: #16a085;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+}
+#logout{
+    width: 100%;
+    margin-top: 1px;
+    background-color: #16a085;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+    
+}
+#mytable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #mytable td, #mytable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+#mytable tr:nth-child(even){background-color: #f2f2f2;}
+
+#mytable tr:hover {background-color: #ddd;}
+
+#mytable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+#edit_btn{
+    width: 90px;
+    margin-top: 5px;
+    background-color: #16a085;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: none;  
+    border-radius: 10px;
+    
+}
+a{
+    text-decoration: none;
+}
