@@ -32,3 +32,35 @@
 a{
     text-decoration: none;
 } 
+.datetime{
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: rgb(242, 243, 245);
+}
+.divdate{
+    margin-top: 20px;
+}
+.divdate .bookbtn button{
+ background-color: rgb(6, 120, 101);
+ font-size: 15px;
+ border: none;
+ margin-top: 40px;
+ margin-left: 300px;
+ color: whitesmoke;
+ border-radius: 15px;
+ padding: 5px 10px;
+ width: 100px;
+}
+.divdate .bookbtn button:hover{
+ background:rgb(238, 238, 174);
+ color: black;
+ cursor: pointer;
+}
+.report{
+    background-color: beige;
+    margin-left: 240px;
+    margin-right: 150px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

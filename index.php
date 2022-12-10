@@ -107,7 +107,7 @@ session_start();
         </div>
         <nav>
             <ul>
-                <li><a href="myhome.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="vehicles.php">Vehicles</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
@@ -129,7 +129,7 @@ session_start();
         <br>
         <label for=""><b>password</b>&nbsp;</label>
         <input name="password" type="password" placeholder="password" class="myhomeinput"> 
-        <p>forget your password <a href="#">click here</a></p>
+        <p>forget your password <a href="">click here</a></p>
         <input name="login" type="submit" value="login now" class="btn_login">
        
         
@@ -145,17 +145,10 @@ session_start();
     
     <div class="myhomediv1">
       <label>Find Your Car</label>
-      <img class="content-items"  src="threecars.png" alt="">
+      <img class="content-items"  src="3.jpg" alt="">
     </div>
-    <div class="myhomediv2">
-        <label for="">Book Car for Rent</label><br>
-    </div>
-    <div class="myhomediv3">
-        <p>
-        Explore the Most Popular Places to Visit in Dhaka. Book A Full-Day Sightseeing Tour Package & Enjoy Your Trip with DhakaChaka Travel, Visit All popular places in Dhaka Like Lalbag, Dhaka Univerrsity, Dhaka Zoo, Sadar Ghat etc. 
-        and make your visit in Dhaka memorable
-        </p>
-    </div>
+    
+
     <br>
  <div>
     

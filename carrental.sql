@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2022 at 04:35 PM
+-- Generation Time: Dec 09, 2022 at 02:11 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -55,19 +55,31 @@ INSERT INTO `agent` (`id`, `name`, `address`, `mobile`, `email`, `commision`, `p
 
 CREATE TABLE `booking` (
   `bid` int(8) NOT NULL,
-  `uid` int(4) NOT NULL,
-  `aid` int(4) NOT NULL,
-  `bdate` varchar(20) NOT NULL,
-  `btime` varchar(20) NOT NULL,
-  `rdate` varchar(20) NOT NULL,
-  `rtime` varchar(20) NOT NULL,
+  `uid` varchar(50) NOT NULL,
+  `aid` varchar(50) NOT NULL,
+  `reg` varchar(50) NOT NULL,
+  `bdate` date NOT NULL,
+  `btime` time NOT NULL,
+  `rdate` date NOT NULL,
+  `rtime` time NOT NULL,
+  `adate` date NOT NULL,
+  `atime` time NOT NULL,
   `hours` int(11) NOT NULL,
   `rate` float NOT NULL,
   `fine` float NOT NULL,
   `total` float NOT NULL,
   `crate` float NOT NULL,
-  `com` float NOT NULL
+  `commision` float NOT NULL,
+  `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`bid`, `uid`, `aid`, `reg`, `bdate`, `btime`, `rdate`, `rtime`, `adate`, `atime`, `hours`, `rate`, `fine`, `total`, `crate`, `commision`, `status`) VALUES
+(1, 'smith@yahoo.com', '', '2211', '2022-12-09', '22:13:00', '2022-12-09', '23:13:00', '2022-12-11', '21:27:00', 47, 900, 83220, 84120, 0, 0, 'returned'),
+(2, 'stephen@gmail.com', 'alal@yahoo.com', '2222', '2022-12-10', '20:32:00', '2022-12-12', '20:32:00', '0000-00-00', '00:00:00', 0, 900, 0, 0, 5, 0, 'confirmed');
 
 -- --------------------------------------------------------
 
@@ -91,11 +103,11 @@ CREATE TABLE `car` (
 --
 
 INSERT INTO `car` (`reg`, `company`, `model`, `rate`, `year`, `type`, `image`, `status`) VALUES
-('1111', 'toyota', 'Auris', 800, 2010, 'auto', 'toy5.png', 'booked'),
-('2222', 'audi', 'Etron', 700, 2019, 'auto', 'aud2.png', 'avilable'),
-('1234567', 'marcetizes', 'Sedan', 900, 2017, 'auto', 'mar2.png', 'avilable'),
-('1001', 'marcetizes', 'Wagon', 700, 2018, 'both', 'toy5.png', 'booked'),
-('1105', 'porche', 'Spyder', 900, 2018, 'auto', 'por4.png', 'avilable'),
+('2211', 'toyota', 'Auris', 800, 2010, 'auto', 'toy5.png', 'available'),
+('2222', 'audi', 'Etron', 700, 2019, 'auto', 'aud2.png', 'booked'),
+('1234567', 'marcetizes', 'Sedan', 900, 2017, 'auto', 'mar2.png', 'available'),
+('1001', 'marcetizes', 'Wagon', 700, 2016, 'auto', 'mar1.png', 'available'),
+('1105', 'porche', 'Spyder', 900, 2018, 'auto', 'por4.png', 'available'),
 ('1009', 'toyota', 'voxy', 900, 2000, 'auto', 'toy1.jpg', 'available');
 
 -- --------------------------------------------------------
@@ -142,8 +154,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`name`, `username`, `password`, `mobile`, `address`, `status`) VALUES
-('John Smith', 'smith@yahoo.com', '123', '01715566223', '45 Leeds, UK', 'pending'),
-('Stephen Collings', 'stephen@gmail.com', '123', '0171265324', '55, New York City, USA', 'accept'),
+('John Smith', 'smith@yahoo.com', '123', '01715566223', '45 Leeds, UK', 'accept'),
+('Stephen Collings', 'stephen@gmail.com', '123', '0171265324', '56, New York City, USA', 'accept'),
 ('Md. Ashiqur Rahman', 'ashiq123@yahoo.com', '1234', '01615234564', '56 Banani, Dhaka', 'accept');
 COMMIT;
 

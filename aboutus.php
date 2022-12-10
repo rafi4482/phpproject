@@ -9,8 +9,10 @@ require "dbconfig/config.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DhakaChaka Car Rental</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="myhome.css">
-   
+    <link rel="stylesheet" href="about.css">
+
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@ require "dbconfig/config.php";
         </div>
         <nav>
             <ul>
-                <li><a href="myhome.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="vehicles.php">Vehicles</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="aboutus.php">About Us</a></li>
@@ -45,10 +47,10 @@ require "dbconfig/config.php";
         <input type="submit" value="login now" class="btn_login">
        
         
-        <p>don't have an account<a href="registration.php">create one</a></p>
+        <p>don't have an account<a href="test3.php">create one</a></p>
         <br>
         <div class="btn_login">
-        <a href="myhome.php">Close</a>
+        <a href="index.php">Close</a>
         </div>
        
     </form>
@@ -56,9 +58,10 @@ require "dbconfig/config.php";
     
     
     
-   
   
-          <div class="section">
+    
+    <br>
+    <div class="section">
 		<div class="container">
 			<div class="content-section">
 				<div class="title">
@@ -81,7 +84,7 @@ require "dbconfig/config.php";
 				</div>
 			</div>
 			<div class="image-section">
-				<img src="3.jpg">
+				<img src="2.jpg">
 			</div>
 		</div>
 	</div>

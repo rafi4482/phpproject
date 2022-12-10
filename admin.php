@@ -19,13 +19,88 @@ require "dbconfig/config.php";
          <form class="myformadmin" action="admin.php" method="post">
          <input name="user" type="submit" id="user" value="User"> <br>
          <input name="agent" type="submit" id="user" value="Agent"> <br>
-         <input name="car" type="submit" id="car" value="Car"><br>
-         <input name="booking" type="submit" id="booking" value="Booking"><br>
+         <input name="car" type="submit" id="car" value="Car Details"><br>
+         <input name="booking" type="submit" id="booking" value="Booking Car"><br>
+         <input name="return" type="submit" id="booking" value="Return Car"><br>
+         <input name="invoice" type="submit" id="booking" value="Invoice"><br>
+         
          <input name="logout" type="submit" id="logout" value="Logout"><br>
        </div>
 
        <?php
+if(isset($_POST['invoice'])){
+  //$username1=$_SESSION['username'];
+  echo "<script>
+  window.location.href='admininvoice.php'
+  </script>";
+}
 
+
+if(isset($_POST['booking'])){
+  //$username1=$_SESSION['username'];
+   
+  $i=0;   
+echo "<div id='seconddiv'>
+<table id='mytable'>
+<tr>
+  <th>ID</th>
+  <th>Username</th>
+  <th>Agent</th>
+  <th>Car Reg</th>
+  <th>Booking Date</th>
+  <th>Booking Time</th>
+  <th>Schedule Return Date</th>
+  <th>Schedule Return Time</th>
+  <th>Actual Return Date</th>
+  <th>Actual Return Time</th>
+  <th>Hours Used</th>
+  <th>Rate per Hour</th>
+  <th>Fine</th>
+  <th>Total Bill</th>
+  <th>Commision Rate</th>
+  <th>Commision</th>
+  <th>Status</th>
+  <th>Action</th>
+ </tr>"
+   ?>
+
+<?php
+  $i=0;
+  //$aid=$_SESSION['username'];
+  //echo "aid="."$aid";
+  $q="select * from booking";
+  $qrun=mysqli_query($con,$q);
+ while($row=mysqli_fetch_assoc($qrun)){
+   $i++;
+   $j="edit"."$i";
+  echo "<tr>
+  <td>".$row["bid"]."</td>
+  <td>".$row["uid"]."</td>
+  <td>".$row["aid"]."</td>
+  <td>".$row["reg"]."</td>
+  <td>".$row["bdate"]."</td>
+  <td>".$row["btime"]."</td>
+  <td>".$row["rdate"]."</td>
+  <td>".$row["rtime"]."</td>
+  <td>".$row["adate"]."</td>
+  <td>".$row["atime"]."</td>
+  <td>".$row["hours"]."</td>
+  <td>".$row["rate"]."</td>
+  <td>".$row["fine"]."</td>
+  <td>".$row["total"]."</td>
+  <td>".$row["crate"]."</td>
+  <td>".$row["commision"]."</td>
+  <td>".$row["status"]."</td>"
+  ?>
+     <td> <a href="adminbooking.php?id=<?=$row['bid'];?>" id='edit_btn'>Edit</td>
+      
+</tr>
+
+<?php
+echo"</div>";
+}
+
+}
         
        if(isset($_POST['user'])){
         $q="select * from user";
@@ -156,8 +231,16 @@ require "dbconfig/config.php";
    }
 }
 
+
+
+
+if(isset($_POST['return'])){
+  echo "<script> location.href='adminreturn.php'</script>" ;
+ }
+
+
 if(isset($_POST['logout'])){
-  echo "<script> location.href='myhome.php'</script>" ;
+  echo "<script> location.href='index.php'</script>" ;
  }
 ?>
    

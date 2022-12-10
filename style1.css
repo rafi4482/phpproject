@@ -63,10 +63,7 @@ section{
     color: var(--yellow);
     
 }
-.logo span{
-    color: var(--yellow);
 
-}
 .header .navbar a{
     font-size: 1.7rem;
     margin: 0.2rem;

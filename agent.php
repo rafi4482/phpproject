@@ -61,14 +61,14 @@ if(isset($_POST['submit'])){
         $category1=$_POST['category'];
     }
     else{
-       // echo "id="."$id";
-      //  echo " name="."$name";
-       // echo " address="."$address";
-       // echo "mobile="."$mobile";
-       // echo " email="."$email";
-       // echo " commision="."$commision";
-       // echo "password="."$password";
-       // echo "category="."$category";
+        //echo "id="."$id";
+       // echo " name="."$name";
+        //echo " address="."$address";
+        //echo "mobile="."$mobile";
+        //echo " email="."$email";
+        //echo " commision="."$commision";
+        //echo "password="."$password";
+        //echo "category="."$category";
         
         $q="insert into agent values('$id','$name','$address','$mobile','$email','$commision','$password','$category')";
         $qrun=mysqli_query($con,$q);

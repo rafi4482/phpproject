@@ -17,11 +17,18 @@ require "dbconfig/config.php";
         <img src="image/avtar.png" class="avatar"/>
    </center>
    <form class="myform" action="registration.php" method="post">
-        <label><b>Name<font color=red>*</font></b></name>
-        <input name="name" type="text" class="inputvalues" placeholder="Type your name" />
+            <label><b>Name</b></label>
+           <input name="name" type="text" class="inputvalues" placeholder="Type your name" />
+            
         <br>
-        <label><b>Address</b></label> 
-        <input name="address" type="text" class="inputvalues" placeholder="Type your Address"/>
+        
+        
+           <label><b>Address</b></label> 
+           <input name="address" type="text" class="inputvalues" placeholder="Type your Address"/>
+           <small>Error message</small>
+       
+
+
         <br>
         <label><b>Mobile Number<font color=red>*</font></b></label> 
         <input name="mobile" type="text" class="inputvalues" placeholder="Type your Mobile no." />
