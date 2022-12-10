@@ -128,8 +128,12 @@ session_start();
         <input name="username" type="text" placeholder="username" class="myhomeinput">
         <br>
         <label for=""><b>password</b>&nbsp;</label>
+        
         <input name="password" type="password" placeholder="password" class="myhomeinput"> 
-        <p>forget your password <a href="">click here</a></p>
+        <!-- <p>forget your password <a href="">click here</a></p> -->
+      <br>
+      <br>
+
         <input name="login" type="submit" value="login now" class="btn_login">
        
         
